@@ -17,3 +17,9 @@
 ```
 docker-compose -f docker-compose-dev.yml exec backend bundle exec rails g scaffold Post title:string context:text
 ```
+
+## マイグレーション
+
+```
+docker-compose -f docker-compose-dev.yml exec backend bundle exec rails db:migrate
+```
