@@ -19,3 +19,9 @@ https://www.youtube.com/watch?v=XQtkP8it9Ag&t=1133s をベースにフルスタ�
 ```
 docker-compose -f docker-compose-dev.yml exec backend bundle exec rails g scaffold Post title:string context:text start_time:datetime end_time:datetime status:integer
 ```
+
+## マイグレーション
+
+```
+docker-compose -f docker-compose-dev.yml exec backend bundle exec rails db:migrate
+```
