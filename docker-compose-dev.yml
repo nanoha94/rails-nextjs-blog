@@ -44,5 +44,7 @@ services:
       - ./client/app:/usr/src/app
     ports:
       - ${NEXTJS_PORT}:3000 # 環境変数（.env）から参照
+    environment:
+      - WATCHPACK_POLLING=true
 volumes:
   db-data:
